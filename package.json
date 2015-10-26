@@ -1,47 +1,72 @@
 {
   "name": "loopback-example-app",
-  "version": "3.1.0",
+  "version": "3.0.0",
   "description": "LoopBack Example Application",
   "main": "server/server.js",
   "dependencies": {
-    "compression": "^1.0.3",
-    "errorhandler": "^1.1.1",
-    "strong-start": "*",
-    "loopback": "^2.0.0",
-    "loopback-boot": "^2.0.0",
-    "loopback-datasource-juggler": "^2.0.0",
-    "serve-favicon": "^2.0.1",
-    "function-rate-limit": "~0.0.1",
-    "request": "^2.37.0",
-    "shuffle": "~0.2.1",
-    "text-table": "~0.2.0",
-    "weighted": "~0.2.2",
     "async": "~0.9.0",
-    "loopback-connector-rest": "^1.1.4"
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "errorhandler": "^1.1.1",
+    "function-rate-limit": "~0.0.1",
+    "http-auth": "^2.2.8",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-connector-mongodb": "^1.13.0",
+    "loopback-connector-mysql": "^2.2.0",
+    "loopback-connector-rest": "^1.10.1",
+    "loopback-datasource-juggler": "^2.39.0",
+    "realm": "0.0.1",
+    "request": "^2.64.0",
+    "serve-favicon": "^2.0.1",
+    "shuffle": "^0.2.2",
+    "text-table": "^0.2.0",
+    "weighted": "^0.2.2",
+    "winston": "^1.1.1"
   },
-  "optionalDependencies": {
-    "loopback-explorer": "^1.1.0",
-    "loopback-connector-mysql": "^1.2.1",
-    "loopback-connector-mongodb": "^1.2.5",
-    "loopback-connector-oracle": "^1.2.1"
-  },
+  "optionalDependencies": {},
   "devDependencies": {
-    "jshint": "^2.7.0",
     "mocha": "^1.20.1",
-    "supertest": "^0.13.0"
+    "supertest": "^0.13.0",
+    "jshint": "^2.5.6"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/loopback-example-app.git"
+    "url": "https://github.com/strongloop-bluemix/loopback-example-app.git"
   },
-  "author": "Miroslav Bajtos <miroslav@strongloop.com>",
+  "author": [
+    "Miroslav Bajtos <miroslav@strongloop.com>",
+    "Dennis Ashby <dennisa@us.ibm.com>"
+  ],
   "license": {
     "name": "MIT",
-    "url": "https://github.com/strongloop/loopback-example-app/blob/master/LICENSE"
+    "url": "https://github.com/strongloop-bluemix/loopback-example-app/blob/master/LICENSE"
   },
   "scripts": {
     "test": "mocha -R spec server/test",
     "pretest": "jshint .",
     "start": "node ."
-  }
+  },
+  "bundleDependencies": [
+    "async",
+    "compression",
+    "errorhandler",
+    "function-rate-limit",
+    "loopback",
+    "loopback-boot",
+    "loopback-connector-mongodb",
+    "loopback-connector-mysql",
+    "loopback-connector-rest",
+    "loopback-datasource-juggler",
+    "loopback-explorer",
+    "request",
+    "serve-favicon",
+    "shuffle",
+    "text-table",
+    "weighted"
+  ],
+  "files": [
+    "./server/logs"
+  ]
 }

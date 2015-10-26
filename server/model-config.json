@@ -1,9 +1,21 @@
 {
   "_meta": {
     "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
       "../common/models",
       "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
     ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -22,18 +34,23 @@
     "public": false
   },
   "Car": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "Customer": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "Inventory": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "Location": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "Note": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,11 +1,30 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file": "./server/memory-db/data.json"
+  },
+  "mongodb": {
+    "host": "demo.strongloop.com",
+    "port": 27017,
+    "database": "demo",
+    "password": "L00pBack",
+    "name": "mongodb",
+    "connector": "mongodb",
+    "user": "demo"
+  },
+  "mysql": {
+    "host": "demo.strongloop.com",
+    "port": 3306,
+    "database": "demo",
+    "password": "L00pBack",
+    "name": "mysql",
+    "connector": "mysql",
+    "user": "demo"
   },
   "geo": {
     "name": "geo",
-    "connector": "rest",
+    "connector": "loopback-connector-rest",
     "operations": [
       {
         "template": {
