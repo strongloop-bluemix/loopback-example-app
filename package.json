@@ -18,7 +18,7 @@
     "loopback-connector-rest": "^1.10.1",
     "loopback-datasource-juggler": "^2.39.0",
     "realm": "0.0.1",
-    "request": "^2.64.0",
+    "request": "^2.65.0",
     "serve-favicon": "^2.0.1",
     "shuffle": "^0.2.2",
     "text-table": "^0.2.0",
