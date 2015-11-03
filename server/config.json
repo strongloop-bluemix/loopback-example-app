@@ -24,12 +24,7 @@
       "disableStackTrace": false
     }
   },
-  "legacyExplorer": false,
-  "explorer": {
-    "realm": "strongloop-api",
-    "username": "strongloop",
-    "password": "strongloop"
-  },
+  "legacyExplorer": true,
   "logger": {
     "level": "debug",
     "filename": "server/logs/app.log"
