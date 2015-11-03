@@ -27,6 +27,7 @@
   "legacyExplorer": true,
   "logger": {
     "level": "debug",
-    "filename": "server/logs/app.log"
+    "directory": "server/logs",
+    "filename": "app.log"
   }
 }

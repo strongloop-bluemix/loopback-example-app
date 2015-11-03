@@ -47,26 +47,5 @@
     "test": "mocha -R spec server/test",
     "pretest": "jshint .",
     "start": "node ."
-  },
-  "bundleDependencies": [
-    "async",
-    "compression",
-    "errorhandler",
-    "function-rate-limit",
-    "loopback",
-    "loopback-boot",
-    "loopback-connector-mongodb",
-    "loopback-connector-mysql",
-    "loopback-connector-rest",
-    "loopback-datasource-juggler",
-    "loopback-explorer",
-    "request",
-    "serve-favicon",
-    "shuffle",
-    "text-table",
-    "weighted"
-  ],
-  "files": [
-    "./server/logs"
-  ]
+  }
 }
