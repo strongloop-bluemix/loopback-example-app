@@ -1,6 +1,6 @@
 {
   "name": "Inventory",
-  "plural": "inventory",
+  "plural": "Inventory",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -11,7 +11,7 @@
       "collection": "inventory"
     },
     "oracle": {
-      "schema": "DEMO",
+      "schema": "BLACKPOOL",
       "table": "INVENTORY"
     }
   },
@@ -74,5 +74,5 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": []
+  "methods": {}
 }

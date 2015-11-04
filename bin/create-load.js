@@ -49,7 +49,7 @@ function toWeightTable(choices) {
 
 function getBaseURL() {
   var ip = process.env.IP || process.env.HOST || '127.0.0.1';
-  var port = process.env.PORT || 3000;
+  var port = process.env.PORT || 3001;
   var baseURL = 'http://' + ip + ':' + port + '/api';
   return baseURL;
 }
