@@ -3,7 +3,7 @@ This is a sample LoopBack Node.js application. It starts strong-pm (StrongLoop p
 
 ### Deploy LoopBack Sample to Bluemix
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/strongloop-bluemix/loopback-example-app.git)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/strongloop-bluemix/loopback-example.git)
 
 When you click this button, Bluemix will clone this repository into an IBM DevOps Services project, set up the deployment pipeline, and push your application to Bluemix.  Your application will get deployed with two routes.
 ```
