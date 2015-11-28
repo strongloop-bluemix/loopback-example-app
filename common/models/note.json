@@ -1,6 +1,5 @@
 {
   "name": "Note",
-  "plural": "notes",
   "base": "PersistedModel",
   "options": {
     "mysql": {
@@ -14,5 +13,5 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": []
+  "methods": {}
 }

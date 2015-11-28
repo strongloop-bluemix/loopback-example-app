@@ -15,7 +15,8 @@ module.exports = function(app, cb) {
   var Location = app.models.Location;
   var Customer = app.models.Customer;
   var Car = app.models.Car;
-  var db = app.dataSources.db;
+
+  var db = app.dataSources.memory;
 
   var ids = {
   };
@@ -27,7 +28,7 @@ module.exports = function(app, cb) {
         cb(err);
         return;
       }
-      async.eachLimit(data, 32, function(d, callback) {
+      async.each(data, function(d, callback) {
         if (ids[Model.modelName] === undefined) {
           // The Oracle data has Location with ids over 80
           // and the index.html depends on location 88 being present
@@ -43,12 +44,11 @@ module.exports = function(app, cb) {
     function(cb) {
       db.autoupdate(cb);
     },
-
     importData.bind(null, Location, locations),
     importData.bind(null, Car, cars),
     importData.bind(null, Inventory, inventory),
     importData.bind(null, Customer, customers)
-  ], function(err/*, results*/) {
+  ], function(err) {
     cb(err);
   });
 };
